@@ -10,7 +10,7 @@
     <title>The Cosmos</title>
 </head>
 
-<body class="bg-gray-500">
+<body class="bg-gray-400 space-y-6">
     <div>
         <!--Navbar component-->
         <div class="cotainer">
@@ -19,7 +19,7 @@
                     <span class="font-bold text-xl">Welcome to the Cosmos!</span>
                 </div>
 
-                <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+                <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto font-bold">
                     <div class="text-sm sm:flex-grow">
                         <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
                             Home
@@ -37,30 +37,38 @@
             <!--End Nav-->
         </div>
     </div>
-    <section class="flex">
+    <section class="grid grid-cols-2 gap-8">
         <!--Going to turn into flexbox of 2 columns-->
-        <div>
+        <div class="... border-2 border-solid border-gray-900 rounded-lg my-20">
             <!-- First Box-->
             <h2>SpaceCraft Information</h2>
             <h2>Individuals in Space</h2>
         </div>
-        <div>
+        <div class="... border-2 border-solid border-gray-900 rounded-lg my-20"">
             <!-- Second Box-->
             <h2>ISS</h2>
             <!-- Interactive Map with API -->
-        </div>
+    </div>
     </section>
     <footer>
-        <h3>Contact Us</h3>
-        <!--Links: Github/Email-->
-        <div>
-            <p></p>
-            <!--Quinn Ryan-->
+        <section>
+            <div class=" grid grid-cols-4">
+            <h3 class="...">Contact Us</h3>
+            <!--Links: Github/Email-->
+            <div class="...">
+                <p>Quinn Ryan</p>
+                <!--Quinn Ryan-->
+            </div>
+            <div class="...">
+                <p>Travis Schram</p>
+                <!--Travis Schram-->
+            </div>
+            <div class="...">
+                <p>Jacob R.</p>
+                <!--Jacob R.-->
+            </div>
         </div>
-        <div>
-            <p></p>
-            <!--Travis Schram-->
-        </div>
+    </section>
     </footer>
     <script src="script.js"></script>
 </body>
