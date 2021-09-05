@@ -1,0 +1,23 @@
+{
+  "name": "space-in-your-face",
+  "version": "1.0.0",
+  "description": "We have designed a space themed web page with a couple of very interesting APIs. The first uses the two-line element (TLE) set to calculate the current and future location of the ISS. Additionally, we have included an API which lists the current people in space and their respective spacecraft.",
+  "main": "script.js",
+  "scripts": {
+    "build-css": "tailwindcss build ./src/style.css -o ./public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letqin/space-in-your-face.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letqin/space-in-your-face/issues"
+  },
+  "homepage": "https://github.com/letqin/space-in-your-face#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.9"
+  }
+}

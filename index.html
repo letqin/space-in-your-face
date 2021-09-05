@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/style.css">
+    <title>The Cosmos</title>
 </head>
-<body>
+
+<body class="bg-gray-400 space-y-6">
+    <div>
+        <!--Navbar component-->
+        <div class="cotainer">
+            <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+                <div class="flex items-center flex-shrink-0 text-white mr-6">
+                    <span class="font-bold text-xl">Welcome to the Cosmos!</span>
+                </div>
+
+                <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto font-bold">
+                    <div class="text-sm sm:flex-grow">
+                        <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
+                            Home
+                        </a>
+                        <a href="#quicklink"
+                            class="block mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
+                            Quick Links
+                        </a>
+
+                        <a href="#contact"
+                            class="block mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <!--End Nav-->
+        </div>
+    </div>
+    <section class="flex">
+        <!--Going to turn into flexbox of 3 columns-->
+        <div class="ml-1 flex-1 border-2 border-solid border-gray-600 rounded-lg h-60">
+            <!-- First Box-->
+            <div class="container">
+                <h2 class="text-xl font-bold flex my-14">SpaceCraft Information</h2>
+            </div>
+            <div class="container">
+                <h2 class="text-xl font-bold flex my-14">Individuals in Space</h2>
+            </div>
+        </div>
+        <div class="flex-1 border-2 border-solid border-gray-600 rounded-lg h-60 ">
+            <!-- Second Box-->
+            <h2 class="mr-2 text-3xl text-center font-bold">ISS</h2>
+            <!-- Interactive Map with API -->
+        </div>
+        <div id="quicklink" class=" ml-1 mr-1 flex-none border-2 border-solid bg-gray-500 border-black rounded-lg h-80">
+            <p class="font-semibold text-lg">Quick Links<strong>:</strong></p>
+            <ul class="leading-loose text-sm">
+                <li><a class="text-white hover:text-blue-500" href="https://www.nasa.gov/" target="_blank">NASA</a>
+                </li>
+                <li><a class="text-white hover:text-blue-500" href="https://www.spacex.com/">SpaceX</a></li>
+                <li><a class="text-white hover:text-blue-500" href="http://www.virgingalactic.com/">Virgin
+                        Galactic</a>
+                </li>
+                <li><a class="text-white hover:text-blue-500"
+                        href="https://www.nasa.gov/multimedia/nasatv/iss_ustream.html">ISS
+                        Live Feed</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <footer class="bg-black">
+        <section class="mt-40">
+            <div class=" grid grid-cols-4">
+                <h3 class="... font-semibold text-white text-2xl">Contact Us</h3>
+                <!--Links: Github/Email-->
+                <div id="Contact" class="... max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+                    <div class="flex-shrink-0">
+                        <img class="h-14" src="https://brand.msu.edu/_files/images/logo-helmet-black.png" alt="">
+                    </div>
+                    <div class="ml-6 pt-1">
+                        <h4 class="text-xl text-gray-900">Quinn Ryan</h4>
+                        <a class="hover:text-blue-700" href="https://github.com/letqin">Github</a>
+                    </div>
+                    <!--Quinn Ryan-->
+                </div>
+                <div class="... max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+                    <div class="flex-shrink-0">
+                        <img class="h-14" src="https://brand.msu.edu/_files/images/logo-helmet-black.png" alt="">
+                    </div>
+                    <div class="ml-6 pt-1">
+                        <h4 class="text-xl text-gray-900">Travis Schram</h4>
+                        <a class="hover:text-blue-700" href="https://github.com/Tschram93">Github</a>
+                    </div>
+                    <!--Travis Schram-->
+                </div>
+                <div class="... max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+                    <div class="flex-shrink-0">
+                        <img class="h-14" src="https://brand.msu.edu/_files/images/logo-helmet-black.png" alt="">
+                    </div>
+                    <div class="ml-6 pt-1">
+                        <h4 class="text-xl text-gray-900">Jacob R.</h4>
+                        <a class="hover:text-blue-700" href="">Github</a>
+                    </div>
+                    <!--Still need GH link-->
+                    <!--Jacob R.-->
+                </div>
+            </div>
+        </section>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
