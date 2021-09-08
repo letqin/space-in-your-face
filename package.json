@@ -4,7 +4,7 @@
   "description": "We have designed a space themed web page with a couple of very interesting APIs. The first uses the two-line element (TLE) set to calculate the current and future location of the ISS. Additionally, we have included an API which lists the current people in space and their respective spacecraft.",
   "main": "script.js",
   "scripts": {
-    "build-css": "tailwindcss build ./src/style.css -o ./public/style.css"
+    "build-css": "tailwindcss build -i ./src/style.css -o ./public/style.css"
   },
   "repository": {
     "type": "git",
