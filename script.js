@@ -25,11 +25,21 @@ fetch('https://api.wheretheiss.at/v1/satellites/25544/tles', {
     .catch(_error => console.log('ERROR')) // _error*
 
 
-const url_ISS = 'https://api.wheretheiss.at/v1/satellites/25544/tles';
+const url_ISS = 'https://api.wheretheiss.at/v1/satellites/25544';
 
 async function GetISS() {
     const response = await fetch(url_ISS);
     const data = await response.json();
-    console.log(data);
-};
+    // console.log(data);
+    const {
+        latitude,
+        longitude
+    } = data;
+
+    document.getElementById('lat').textContent = latitude;
+    document.getElementById('long').textContent = longitude;
+
+    console.log(latitude)
+    console.log(longitude)
+}
 GetISS();
