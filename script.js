@@ -17,4 +17,4 @@ fetch('https://api.wheretheiss.at/v1/satellites', {
         res.json()
     })
     .then(data => console.log(data))
-    .catch(error => console.log('ERROR'))
+    .catch(_error => console.log('ERROR')) // _error*
