@@ -5,6 +5,8 @@ let key = "BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t";
 var issFlexBox = document.body.querySelector('#issFlexBox');
 console.log(issFlexBox);
 
+//Leaflet
+
 // Fetch WhereIsTheISS API
 
 fetch('https://api.wheretheiss.at/v1/satellites/25544/tles', {
@@ -21,3 +23,13 @@ fetch('https://api.wheretheiss.at/v1/satellites/25544/tles', {
     })
     .then(data => console.log(data))
     .catch(_error => console.log('ERROR')) // _error*
+
+
+const url_ISS = 'https://api.wheretheiss.at/v1/satellites/25544/tles';
+
+async function GetISS() {
+    const response = await fetch(url_ISS);
+    const data = await response.json();
+    console.log(data);
+};
+GetISS();
