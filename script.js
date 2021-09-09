@@ -35,6 +35,9 @@ const tiles = L.tileLayer(tileURL, {
 });
 tiles.addTo(mymap);
 
+// map marker
+const marker = L.marker([0, 0]).addTo(mymap);
+
 // ISS api link
 const url_ISS = 'https://api.wheretheiss.at/v1/satellites/25544';
 
@@ -47,6 +50,8 @@ async function GetISS() {
         latitude,
         longitude
     } = data;
+
+    marker.setLatLng([latitude, longitude]);
 
     document.getElementById('lat').textContent = latitude;
     document.getElementById('long').textContent = longitude;
