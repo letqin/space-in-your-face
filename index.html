@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/tailwind.css" rel="stylesheet">
-    <link rel="stylesheet" href="./public/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
+    <link rel="stylesheet" href="./public/style.css">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
@@ -25,18 +25,16 @@
                     <span class="font-bold text-xl">Welcome to the Cosmos!</span>
                 </div>
 
-                <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto font-bold">
+                <div class="flex-grow sm:flex sm:items-center sm:w-auto font-bold">
                     <div class="text-sm sm:flex-grow">
-                        <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
+                        <a href="#" class="mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
                             Home
                         </a>
-                        <a href="#quicklink"
-                            class="block mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
+                        <a href="#quicklink" class="mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
                             Quick Links
                         </a>
 
-                        <a href="#contact"
-                            class="block mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
+                        <a href="#contact" class="mt-4 sm:inline-block sm:mt-0 text-green-400 hover:text-white mr-4">
                             Contact Us
                         </a>
                     </div>
@@ -47,7 +45,7 @@
     </div>
     <section class="flex">
         <!--Going to turn into flexbox of 3 columns-->
-        <div id="issFlexBox" class="ml-1 flex-1 border-2 border-solid border-gray-600 rounded-lg h-60">
+        <div class="ml-1 flex-1 border-2 border-solid border-gray-600 rounded-lg h-60">
             <!-- First Box-->
             <div class="container">
                 <h2 class="text-xl font-bold flex my-14">SpaceCraft Information</h2>
@@ -56,7 +54,7 @@
                 <h2 class="text-xl font-bold flex my-14">Individuals in Space</h2>
             </div>
         </div>
-        <div class="flex-1 border-2 border-solid border-gray-600 rounded-lg h-60 ">
+        <div id="issFlexBox" class="flex-1 border-2 border-solid border-gray-600 rounded-lg h-60 ">
             <!-- Second Box-->
             <h2 class="mr-2 text-3xl text-center font-bold">ISS</h2>
             <p>latitude: <span id=lat></span><br>
