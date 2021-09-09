@@ -24,8 +24,20 @@ fetch('https://api.wheretheiss.at/v1/satellites/25544/tles', {
     .then(data => console.log(data))
     .catch(_error => console.log('ERROR')) // _error*
 
+//Copyright for 'OpenStreetMap DO NOT REMOVE
+const copyright = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+//LeafLet map
+const mymap = L.map('mapid').setView([51.505, -0.09], 1);
+// Tiles to build map on LeafLet
+const tileURL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+const tiles = L.tileLayer(tileURL, {
+    copyright
+});
+tiles.addTo(mymap);
 
+// ISS api link
 const url_ISS = 'https://api.wheretheiss.at/v1/satellites/25544';
+
 
 async function GetISS() {
     const response = await fetch(url_ISS);
@@ -43,5 +55,3 @@ async function GetISS() {
     console.log(longitude)
 }
 GetISS();
-
-const mymap = L.map('mapid').setView([51.505, -0.09], 13);
