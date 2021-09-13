@@ -1,6 +1,7 @@
 // API Key NASA
 let key = "BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t";
 
+
 // Establish variable for the location of "ISS" flexbox.
 var issFlexBox = document.body.querySelector('#issFlexBox');
 console.log(issFlexBox);
@@ -70,3 +71,5 @@ async function GetISS() {
     console.log(longitude)
 }
 GetISS();
+
+const nasa_url = "https://api.nasa.gov/planetary/apod?api_key=BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t";
