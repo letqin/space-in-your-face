@@ -4,7 +4,7 @@ let key = "BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t";
 
 // Establish variable for the location of "ISS" flexbox.
 var issFlexBox = document.body.querySelector('#issFlexBox');
-console.log(issFlexBox);
+// console.log(issFlexBox);
 
 //Leaflet
 
@@ -28,6 +28,10 @@ fetch('https://api.wheretheiss.at/v1/satellites/25544', {
 
 //Copyright for 'OpenStreetMap DO NOT REMOVE
 const copyright = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+const streetmapCopyright = document.querySelector('#streetmapCopyright');
+// console.log(streetmapCopyright);
+streetmapCopyright.innerHTML = copyright;
+
 //LeafLet map
 const mymap = L.map('mapid').setView([0, 0], 1);
 // Tiles to build map on LeafLet
@@ -68,8 +72,8 @@ async function GetISS() {
     document.getElementById('lat').textContent = latitude;
     document.getElementById('long').textContent = longitude;
 
-    console.log(latitude)
-    console.log(longitude)
+    // console.log(latitude)
+    // console.log(longitude)
 }
 GetISS();
 
@@ -97,14 +101,19 @@ function imageOfTheDay() {
 async function gotData() {
     const response = await fetch(nasa_url);
     let data = await response.json();
-    console.log(data.copyright);
-    console.log(data.hdurl)
+    // console.log(data.copyright);
+    // console.log(data.hdurl)
     const {
         copyright,
         hdurl
     } = data;
-    document.querySelector(".imod").src = hdurl;
 
+    document.querySelector(".imod").src = hdurl;
+    let copyrights = document.querySelector("#copyrights");
+    copyrights.textContent = '©' + copyright;
+
+
+    // ©
     // document.getElementsByClassName("imod");
     // console.log(copyright);
     // console.log(hdurl);
