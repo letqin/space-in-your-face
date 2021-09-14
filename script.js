@@ -72,4 +72,19 @@ async function GetISS() {
 }
 GetISS();
 
-const nasa_url = "https://api.nasa.gov/planetary/apod?api_key=BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t";
+fetch('https://api.nasa.gov/planetary/apod?api_key=BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t', {
+
+    })
+    .then(res => {
+        if (res.ok) {
+            console.log('SUCCESS')
+        } else {
+            console.log('Not Successful')
+        }
+        res.json()
+    })
+    .then(data => console.log(data))
+    .catch(_error => console.log('ERROR'))
+
+
+const nasa_url = 'https://api.nasa.gov/planetary/apod?api_key=BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t';
