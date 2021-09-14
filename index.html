@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/tailwind.css" rel="stylesheet">
+    <link href="tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
@@ -19,7 +19,7 @@
 <body class="bg-gray-400 space-y-6">
     <div>
         <!--Navbar component-->
-        <div class="cotainer">
+        <div class="container">
             <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
                 <div class="flex items-center flex-shrink-0 text-white mr-6">
                     <span class="font-bold text-xl">Welcome to the Cosmos!</span>
@@ -49,34 +49,35 @@
             <!-- First Box-->
             <div class="container border border-b-2">
                 <h2 class="ml-2 text-xl font-bold flex my-14 text-center">NASA Image of the Day</h2>
-                <div class="imod"></div>
+                <img class="imod" src="" alt="">
+                < </div> </div> <div id="issFlexBox"
+                    class="flex-1 border-t-2 border-l-2 border-solid border-gray-600 rounded-lg h-5/6">
+                    <!-- Second Box-->
+                    <h2 class="mr-2 text-3xl text-center font-bold">ISS</h2>
+                    <p class="ml-1">latitude: <span id=lat></span><br>
+                        longitude: <span id="long"></span></p>
+
+                    <div id="mapid" class="mt-0.5"></div>
+
+                    <!-- Interactive Map with API -->
             </div>
-        </div>
-        <div id="issFlexBox" class="flex-1 border-t-2 border-l-2 border-solid border-gray-600 rounded-lg h-5/6">
-            <!-- Second Box-->
-            <h2 class="mr-2 text-3xl text-center font-bold">ISS</h2>
-            <p class="ml-1">latitude: <span id=lat></span><br>
-                longitude: <span id="long"></span></p>
-
-            <div id="mapid" class="mt-0.5"></div>
-
-            <!-- Interactive Map with API -->
-        </div>
-        <div id="quicklink" class=" ml-2 mr-1 flex-none border-2 border-solid bg-gray-500 border-black rounded-lg h-80">
-            <p class="font-semibold text-lg">Quick Links<strong>:</strong></p>
-            <ul class="leading-loose text-sm">
-                <li><a class="text-white hover:text-blue-500 ml-1" href="https://www.nasa.gov/" target="_blank">NASA</a>
-                </li>
-                <li><a class="text-white hover:text-blue-500 ml-1" href="https://www.spacex.com/">SpaceX</a>
-                </li>
-                <li><a class="text-white hover:text-blue-500 ml-1" href="http://www.virgingalactic.com/">Virgin
-                        Galactic</a>
-                </li>
-                <li><a class="text-white hover:text-blue-500 ml-1"
-                        href="https://www.nasa.gov/multimedia/nasatv/iss_ustream.html">ISS
-                        Live Feed</a></li>
-            </ul>
-        </div>
+            <div id="quicklink"
+                class=" ml-2 mr-1 flex-none border-2 border-solid bg-gray-500 border-black rounded-lg h-80">
+                <p class="font-semibold text-lg">Quick Links<strong>:</strong></p>
+                <ul class="leading-loose text-sm">
+                    <li><a class="text-white hover:text-blue-500 ml-1" href="https://www.nasa.gov/"
+                            target="_blank">NASA</a>
+                    </li>
+                    <li><a class="text-white hover:text-blue-500 ml-1" href="https://www.spacex.com/">SpaceX</a>
+                    </li>
+                    <li><a class="text-white hover:text-blue-500 ml-1" href="http://www.virgingalactic.com/">Virgin
+                            Galactic</a>
+                    </li>
+                    <li><a class="text-white hover:text-blue-500 ml-1"
+                            href="https://www.nasa.gov/multimedia/nasatv/iss_ustream.html">ISS
+                            Live Feed</a></li>
+                </ul>
+            </div>
 
     </section>
     <footer class="bg-black">

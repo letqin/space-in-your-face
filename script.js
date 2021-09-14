@@ -8,6 +8,7 @@ console.log(issFlexBox);
 
 //Leaflet
 
+
 // Fetch WhereIsTheISS API
 
 fetch('https://api.wheretheiss.at/v1/satellites/25544', {
@@ -73,3 +74,41 @@ async function GetISS() {
 GetISS();
 
 const nasa_url = "https://api.nasa.gov/planetary/apod?api_key=BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t";
+
+fetch('https://api.nasa.gov/planetary/apod?api_key=BSrNrFfi6oeF8CToW9wqHYUh1VIQeAAbQTgdzp5t', {
+        // method: "POST",
+        // body: {}
+    })
+    .then(res => {
+        if (res.ok) {
+            console.log('SUCCESS')
+        } else {
+            console.log('Not Successful')
+        }
+        res.json()
+    })
+    .then(data => console.log(data))
+    .catch(_error => console.log('ERROR')) // _error*
+
+function imageOfTheDay() {
+    loadJSON(nasa_url, gotData)
+};
+// const imod;
+async function gotData() {
+    const response = await fetch(nasa_url);
+    let data = await response.json();
+    console.log(data.copyright);
+    console.log(data.hdurl)
+    const {
+        copyright,
+        hdurl
+    } = data;
+    document.querySelector(".imod").src = hdurl;
+
+    // document.getElementsByClassName("imod");
+    // console.log(copyright);
+    // console.log(hdurl);
+
+    // imod = data;
+};
+gotData();
