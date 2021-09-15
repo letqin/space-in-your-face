@@ -121,3 +121,5 @@ async function gotData() {
     // imod = data;
 };
 gotData();
+
+// Disable scrolling in interactive box window
