@@ -6,7 +6,7 @@ We have designed a space themed web page with a couple of very interesting APIs.
 
 ## APIs used
 
-The [Where the ISS at API](https://wheretheiss.at/) uses the [two line element set](https://en.wikipedia.org/wiki/Two-line_element_set) of the International Space Station to display where it is. The TLE data is then converted into latitude and longitude in JSON format. This location is of course approximate due to there being no solid point of reference in space and the incredible speed of the Space Station.
+The [Where the ISS at API](https://wheretheiss.at/) uses the [two line element set](https://en.wikipedia.org/wiki/Two-line_element_set) of the International Space Station to display where it is. The TLE data is then converted into latitude and longitude in JSON format. This location is of course approximate due to there being no solid point of reference in space and the incredible speed of the Space Station. This information is then used by tiles to build the map for [Openstreetmap](https://www.openstreetmap.org/) to display. The ISS image is displayed using [Leaflet](https://leafletjs.com/) according to the TLE data.
 
 ***
 
@@ -18,7 +18,7 @@ In the Quick Links section, we have included a link to a few space related websi
 
 ## Additional Information
 
-
+This project was made for the MSU coding boot camp unit 7 project 1. The website may be built upon to include more information and interaction in the future. Space In Your Face is deployed live to Github Pages for your browsing.
 
 ## Links
 
@@ -32,4 +32,6 @@ In the Quick Links section, we have included a link to a few space related websi
 
 - [NASA's open APIs](https://api.nasa.gov/)
 
-- 
+- [Openstreetmap](https://www.openstreetmap.org/)
+
+- [Leaflet](https://leafletjs.com/)
