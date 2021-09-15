@@ -92,7 +92,7 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=BSrNrFfi6oeF8CToW9wqHYUh1VIQe
         res.json()
     })
     .then(data => console.log(data))
-    .catch(_error => console.log('ERROR')) // _error*
+    .catch(_error => console.log('ERROR'))
 
 function imageOfTheDay() {
     loadJSON(nasa_url, gotData)

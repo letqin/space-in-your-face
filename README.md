@@ -1,5 +1,7 @@
 # Space In Your Face
 
+![thecosmos](thecosmos.png)
+
 We have designed a space themed web page with a couple of very interesting APIs. The first uses the two-line element (TLE) set to calculate the current location of the ISS in Earth's orbit. The second is a picture of the day from NASA. Quick links to several space related websites are included at the right side of the page so users can more easily access their site.
 
 ## APIs used
@@ -16,9 +18,13 @@ In the Quick Links section, we have included a link to a few space related websi
 
 ## Additional Information
 
+
+
 ## Links
 
-- [Space In Your Face](https://letqin.github.io/space-in-your-face/)
+- [Space In Your Face Website](https://letqin.github.io/space-in-your-face/)
+
+- [Our GitHub Repository](https://github.com/letqin/space-in-your-face)
 
 - [Astronomy Picture Of the Day](https://apod.nasa.gov/apod/astropix.html)
 
