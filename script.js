@@ -106,9 +106,14 @@ async function gotData() {
     const {
         copyright,
         hdurl,
+        url
     } = data;
-
     document.querySelector(".imod").src = hdurl;
+    let imageInsert = document.querySelector(".imod").src = hdurl;
+    if (imageInsert = 'undefined') {
+        document.querySelector(".imod").src = url;
+    }
+
     let copyrights = document.querySelector("#copyrights");
     copyrights.textContent = '©' + copyright;
 
