@@ -105,7 +105,7 @@ async function gotData() {
     // console.log(data.hdurl)
     const {
         copyright,
-        hdurl
+        hdurl,
     } = data;
 
     document.querySelector(".imod").src = hdurl;
@@ -121,5 +121,12 @@ async function gotData() {
     // imod = data;
 };
 gotData();
+
+// Check media type 
+
+// if picture media display hdurl(picture)
+
+// else display video(or other media)
+
 
 // Disable scrolling in interactive box window
