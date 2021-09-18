@@ -105,12 +105,19 @@ async function gotData() {
     // console.log(data.hdurl)
     const {
         copyright,
-        hdurl
+        hdurl,
+        url
     } = data;
 
     document.querySelector(".imod").src = hdurl;
-    let copyrights = document.querySelector("#copyrights");
-    copyrights.textContent = '©' + copyright;
+    let imageInsert = document.querySelector(".imod").src = hdurl;
+    if (imageInsert = 'undefined') {
+        document.querySelector(".vmod").src = url;
+
+
+        let copyrights = document.querySelector("#copyrights");
+        copyrights.textContent = '©' + copyright
+    };
 
 
     // ©
@@ -122,4 +129,13 @@ async function gotData() {
 };
 gotData();
 
+
+// Check media type 
+
+// if picture media display hdurl(picture)
+
+// else display video(or other media)
+
+
 // Disable scrolling in interactive box window
+// 
