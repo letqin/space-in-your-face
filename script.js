@@ -110,12 +110,12 @@ async function gotData() {
     } = data;
 
     document.querySelector(".imod").src = hdurl;
-    let imageInsert = document.querySelector(".imod").src = hdurl;
+    var imageInsert = document.querySelector(".imod").src = hdurl;
     if (imageInsert = 'undefined') {
         document.querySelector(".vmod").src = url;
 
 
-        let copyrights = document.querySelector("#copyrights");
+        var copyrights = document.querySelector("#copyrights");
         copyrights.textContent = '©' + copyright
     };
 
