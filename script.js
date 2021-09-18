@@ -109,7 +109,7 @@ async function gotData() {
         url
     } = data;
 
-    var videoInsert = document.querySelector(".vmod").src = url;
+    // var videoInsert = document.querySelector(".vmod").src = url;
     document.querySelector(".imod").src = hdurl;
     var imageInsert = document.querySelector(".imod").src = hdurl;
     if (imageInsert = 'undefined') {
@@ -126,9 +126,9 @@ async function gotData() {
     }
 
     // if picture exists don't display .vmod
-    // if (imageInsert.src = '') {
-    //     videoInsert.delete()
-    // }
+    if (imageInsert.src = '') {
+        videoInsert.delete()
+    }
 
 
     // if .vmod exists don't display picture(.imod)
