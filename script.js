@@ -122,7 +122,6 @@ async function gotData() {
     var copyrights = document.querySelector("#copyrights");
     if (nasa_url.copyright = '') {
         copyrights.textContent = '©' + copyright
-
     }
 
     // if picture exists don't display .vmod
