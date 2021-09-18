@@ -108,17 +108,26 @@ async function gotData() {
         hdurl,
         url
     } = data;
-
+    // var videoInsert = document.querySelector(".vmod").src = url;
     document.querySelector(".imod").src = hdurl;
     let imageInsert = document.querySelector(".imod").src = hdurl;
     if (imageInsert = 'undefined') {
-        document.querySelector(".vmod").src = url;
+        document.querySelector(".imod").src = url;
 
+        // 
 
-        let copyrights = document.querySelector("#copyrights");
-        copyrights.textContent = '©' + copyright
     };
+    // does not add a copyright notice if copyrights do not exist
+    let copyrights = document.querySelector("#copyrights");
+    if (nasa_url.copyright = '') {
+        copyrights.textContent = '©' + copyright
 
+    }
+
+    // if picture exists don't display .vmod
+
+
+    // if .vmod exists don't display picture(.imod)
 
     // ©
     // document.getElementsByClassName("imod");
